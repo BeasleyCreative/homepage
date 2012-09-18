@@ -219,6 +219,7 @@ td { vertical-align: top; }
 
 /* GLOBALS */
 body{background:#000;}
+.center {text-align: center;}
 img, a img{ border:none; background:none;}
 .max-image {width:100%;}
 #container{background:url(../img/topDrop.png) top center repeat-x; padding-top:5px; position:relative;}
