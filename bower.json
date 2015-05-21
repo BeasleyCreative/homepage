@@ -1,0 +1,19 @@
+{
+  "name": "bea.cr",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BeasleyCreative/homepage",
+  "authors": [
+    "Coty Beasley <coty@cotybeasley.name>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "roboto-fontface": "~0.4.2"
+  }
+}
