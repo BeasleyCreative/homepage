@@ -1,7 +1,10 @@
 // Colors
 $color_beasleyBlue-hex: #4CC0DC;
-$color_beasleyBlue-rgba: rgba(76, 192, 220, 0.8);
+$color_beasleyBlue-rgba: rgba(76, 192, 220, 0.75);
+$color_beasleyBlack: rgba(0,0,0,0.75);
 
+
+// Globals
 html, body {
   height: 100%;
   width: 100%;
@@ -9,6 +12,7 @@ html, body {
   padding: 0;
   font-size: 10px;
   font-family: Roboto, sans-serif;
+  color: $color_beasleyBlack;
 }
 
 html {
@@ -18,15 +22,58 @@ html {
 }
 
 body {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.25);
 }
 
+a, a:visited, a:active {
+  transition: background 0.4s;
+  color: white;
+  text-decoration: none;
+  background: $color_beasleyBlue-rgba;
+  padding: 0 0.25em;
+  box-shadow: 1px 1px 0.25rem rgba(0,0,0,0.25);
+  &:hover {
+	background: darken($color_beasleyBlue-hex, 20%);
+  }
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.em {
+  font-size: 3rem;
+  margin: 2rem 0;
+  border: 1px dotted lighten($color_beasleyBlack, 60%);
+  border-left: 0;
+  border-right: 0;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.nobreak {
+  white-space: pre;
+}
+
+// Content
 main {
   font-size: 2rem;
   margin: 0 auto;
   text-align: center;
   max-width: 800px;
   padding: 2rem;
+  h1 {
+	margin-bottom: 1rem;
+	line-height: 100%;
+  }
+  p {
+	margin: 0;
+	line-height: 150%;
+	color: lighten($color_beasleyBlack, 15%);
+  }
 }
 
 img[role="logo"] {
